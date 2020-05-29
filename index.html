@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>
+            Gradiente
+        </title>
+    </head>
+    <body>
+        <main>
+            <div class="div-main">
+                <div class="img-main">
+                    <img src="index.png">
+                </div>
+                <div id="input">
+                    <form>
+                        <br>
+                        <input type="email" id="femail" name="femail" placeholder='Email, username ou telefone...' >
+                        <input type="password" id="fsenha" placeholder="Senha">
+                        <input type="submit" value=" ">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script>
+            var main = document.getElementsByTagName("main")[0].style;
+            main.opacity = "1";
+            main.transition = "opacity 0.5s"
+            document.getElementById("input").style.transform = "translateX(-0px)";
+            document.getElementById("input").style.transition = "transform 0.2s linear 0.5s";
+        </script>
+    </body>
+</html>
